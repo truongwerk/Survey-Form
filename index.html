@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles/master.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="title">
+        ABC University's study habits survey for 2020 students.
+      </h1>
+      <p id="description" style="font-size: large; color: #000">
+        Help us improve our shool.
+      </p>
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name:</label> <br />
+        <input
+          type="text"
+          id="name"
+          placeholder="Your full name"
+          required
+        /><br />
+        <label for="email" id="email-label">Email:</label><br />
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Your email address."
+          required
+        />
+        <br />
+        <label for="number" id="number-label">Student ID Number:</label><br />
+        <input
+          type="number"
+          name=""
+          id="number"
+          placeholder="20xxxxxx"
+          min="20000000"
+          max="20999999"
+        />
+        <br />
+        <div>
+          <label for="dropdown">What your faculty?</label><br />
+          <select name="" id="dropdown">
+            <option disabled>--Choose your faculty--</option>
+            <option value="it">Information Technology Faculty</option>
+            <option value="chemical">Chemical Faculty</option>
+            <option value="electrical">Electrical Faculty</option>
+            <option value="civil">Civil Engineering Faculty</option>
+          </select>
+        </div>
+        <div class="radioCheck">
+          <p>How often do you study at home?</p>
+          <label for="wonderfull">
+            <input type="radio" name="often" id="wonderfull" checked value="7"/> Every
+            Day.</label
+          >
+          <label for="nice">
+            <input type="radio" name="often" id="nice" value="5-6" /> About 5-6
+            days/week.</label
+          >
+          <label for="medium">
+            <input type="radio" name="often" id="medium" value="3-4"/> About 3-4
+            days?week.</label
+          >
+          <label for="bad">
+            <input type="radio" name="often" id="bad" value="0-2"/> About 2 days or even
+            less.</label
+          >
+        </div>
+        <div class="radioCheck">
+          <p>What do you do in your free time?</p>
+          <label for="games">
+            <input type="checkbox" name="freeTime" id="games" value="game"/> Play Video
+            Game.</label
+          >
+          <label for="music">
+            <input type="checkbox" name="freeTime" id="music" value="music" /> Listen to
+            Music</label
+          >
+          <label for="sport">
+            <input type="checkbox" name="freeTime" id="sport" value="sport"/> Play
+            Sport.</label
+          >
+          <label for="other">
+            <input type="checkbox" name="freeTime" id="other" value="other"/> Other.</label
+          >
+        </div>
+        <div>
+          <label for="method">Tell us your learning method.</label> <br />
+          <textarea
+            id="method"
+            name="method"
+            rows="4"
+            cols="50"
+            placeholder="Tell us you learning method:"
+          >
+          </textarea>
+        </div>
+        <button id="submit" name="submit">Submit.</button>
+      </form>
+    </div>
+  </body>
+</html>

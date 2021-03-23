@@ -1,0 +1,53 @@
+html {
+  width: 100%;
+}
+body {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+#main {
+  width: 900px;
+  height: 90%;
+  background-color: rgb(29, 197, 155, 0.5);
+}
+form {
+  text-align: start;
+  padding: 10px;
+}
+#name,
+#email,
+#number {
+  width: 98%;
+  height: 2em;
+  border-radius: 4px;
+}
+.radioCheck {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  padding: 1em;
+}
+@media only screen and (max-width: 1000px) {
+  #main {
+    width: 90%;
+  }
+}
+#submit{
+    width: 10em;
+    height: 4em;
+    color: teal;
+    background-color: tomato;
+}
