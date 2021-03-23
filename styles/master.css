@@ -11,12 +11,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 0, 0.5),
-      rgba(0, 0, 255, 0.5)
-    ),
-    url("https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("../images/Wallpaper.jpg");
 }
 #main {
   width: 900px;
@@ -48,6 +43,8 @@ form {
 #submit{
     width: 10em;
     height: 4em;
-    color: teal;
-    background-color: tomato;
+    color: rgb(209, 211, 198);
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgb(180, 66, 129);
 }
