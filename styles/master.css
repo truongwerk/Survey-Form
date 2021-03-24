@@ -1,5 +1,6 @@
 html {
   width: 100%;
+  font-size: larger;
 }
 body {
   box-sizing: content-box;
@@ -14,7 +15,7 @@ body {
   background-image: url("../images/Wallpaper.jpg");
 }
 #main {
-  width: 900px;
+  width: 600px;
   height: 90%;
   background-color: rgb(29, 197, 155, 0.5);
 }
@@ -27,7 +28,8 @@ form {
 #number {
   width: 98%;
   height: 2em;
-  border-radius: 4px;
+  border-radius: 6px;
+  border: 3px solid rgba(13, 231, 177, 0.9);
 }
 .radioCheck {
   display: flex;
@@ -35,16 +37,24 @@ form {
   align-items: flex-start;
   padding: 1em;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   #main {
     width: 90%;
   }
 }
-#submit{
-    width: 10em;
-    height: 4em;
-    color: rgb(209, 211, 198);
-    font-size: larger;
-    font-weight: bolder;
-    background-color: rgb(180, 66, 129);
+#submit {
+  width: 60%;
+  height: 2em;
+  color: rgb(209, 211, 198);
+  font-size: larger;
+  font-weight: bolder;
+  background-color: rgba(36, 197, 33, 0.8);
+}
+#dropdown {
+  height: 3em;
+  width: 70%;
+}
+#method {
+  width: 80%;
+  text-align: left;
 }
